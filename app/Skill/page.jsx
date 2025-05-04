@@ -380,26 +380,26 @@ export default React.memo(function Skills() {
           style={{ perspective: '2000px' }} // Add perspective for 3D effect
         >
           <motion.button
-            className="absolute left-4 z-20 bg-white/90 text-black rounded-full p-3 shadow-lg hover:bg-white transition-all focus:outline-none focus:ring-2 focus:ring-blue-500"
-            onClick={handlePrev}
-            aria-label="Previous skill"
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-          >
-            <ChevronLeft size={20} />
-          </motion.button>
-          
-          <motion.button
-            className="absolute right-4 z-20 bg-white/90 text-black rounded-full p-3 shadow-lg hover:bg-white transition-all focus:outline-none focus:ring-2 focus:ring-blue-500"
-            onClick={handleNext}
-            aria-label="Next skill"
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-          >
-            <ChevronRight size={20} />
-          </motion.button>
+              className="hidden md:flex absolute left-4 z-20 bg-white/90 text-black rounded-full p-3 shadow-lg hover:bg-white transition-all focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onClick={handlePrev}
+              aria-label="Previous project"
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              <ChevronLeft size={20} />
+            </motion.button>
+
+            <motion.button
+              className="hidden md:flex absolute right-4 z-20 bg-white/90 text-black rounded-full p-3 shadow-lg hover:bg-white transition-all focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onClick={handleNext}
+              aria-label="Next project"
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              <ChevronRight size={20} />
+            </motion.button>
 
           <div className="relative h-full w-full flex items-center justify-center" aria-live="polite">
             {skills.map((skill, i) => {
