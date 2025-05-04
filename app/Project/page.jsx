@@ -240,7 +240,7 @@ export default React.memo(function Projects() {
     <LazyMotion features={domAnimation}>
       <div 
         ref={sectionRef}
-        className="relative w-full max-w-full mx-auto max-h-[700px] mt-5 flex flex-col items-center justify-self-center overflow-hidden p-4"
+        className="relative w-full  bg-amber-50 max-w-full mx-auto h-[90vw] sm:h-[500px] mt-5 flex flex-col items-center justify-self-center overflow-x-hidden p-4"
         id="projects-section" 
         aria-label="Projects Section"
       >
@@ -282,7 +282,7 @@ export default React.memo(function Projects() {
 </motion.button>
 
 
-          <div className="relative h-full w-full flex items-center justify-center" aria-live="polite">
+          <div className="relative  h-full w-full flex items-center justify-center" aria-live="polite">
             {projects.map((project, i) => {
               const isActive = i === activeIndex;
               const { position, scale, zIndex, opacity } = getCardStyles(i);
