@@ -14,7 +14,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>{metadata.title}</title>
-        <meta name="description"/>
       </head>
       <body className="relative overflow-x-hidden">
         {/* Optional */}
