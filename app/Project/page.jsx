@@ -398,9 +398,9 @@ export default React.memo(function Projects() {
                       {/* Content section - Bottom half */}
                       <CardContent className="p-5 bg-white dark:bg-gray-900 flex flex-col h-[calc(100%-14rem)]">
                         {/* Description */}
-                        <div className="overflow-auto flex flex-col gap-4 max-h-full">
+                        <div className="   flex flex-col gap-4 ">
                           {/* Description */}
-                          <div className="overflow-auto mb-1.5  flex flex-col gap-4 max-h-full pr-1">
+                          <div className=" mb-1.5  flex flex-col gap-4  pr-1">
                             {/* Description */}
                             <div className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
                               {project.description}
