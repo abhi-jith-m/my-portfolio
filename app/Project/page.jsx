@@ -348,7 +348,7 @@ export default React.memo(function Projects() {
                   >
                     {/* CARD DESIGN */}
                     <Card
-                      className={ ` h-[90vw] w-[340px] sm:h-[500px] rounded-xl overflow-hidden shadow-xl transition-all duration-300 ${
+                      className={ ` h-full w-[340px] sm:h-[500px] rounded-xl overflow-hidden shadow-xl transition-all duration-300 ${
                         focusedIndex === i ? 'ring-2 ring-blue-500' : ''
                       } ${isActive ? 'border border-blue-400/30' : ''}`}
                       style={{
