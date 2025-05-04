@@ -263,7 +263,7 @@ export default React.memo(function Skills() {
       else {
         // Set position to show exactly at sides with right spacing
         // This is the key setting for controlling visible cards
-        const gap = (containerWidth - cardWidth) / 2 * 0.8; // Adjustable spacing
+        const gap = (containerWidth - cardWidth) /  2.5 * 0.8; // Adjustable spacing
         position = distanceFromActive * gap;
         scale = 0.85; // Scale down side cards slightly
         opacity = 0.8; // Make side cards slightly transparent
