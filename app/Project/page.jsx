@@ -240,12 +240,12 @@ export default React.memo(function Projects() {
     <LazyMotion features={domAnimation}>
       <div 
         ref={sectionRef}
-        className="relative w-full mt-10 max-w-full mx-auto h-[800px] sm:h-[500px] sm:mt-5 flex flex-col items-center justify-self-center overflow-x-hidden p-4"
+        className="relative w-full mt-10 max-w-full mx-auto h-[800px] sm:h-[600px] sm:mt-[-10px] flex flex-col items-center justify-self-center overflow-x-hidden p-4"
         id="projects-section" 
         aria-label="Projects Section"
       >
         <div
-          className="relative w-full max-w-[1200px] h-[520px] mx-auto flex justify-center items-center z-10 overflow-hidden px-20"
+          className="relative  w-full max-w-[1200px] h-full mx-auto flex justify-center items-center z-10 overflow-hidden px-20"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
           ref={cardsContainerRef}
@@ -282,7 +282,7 @@ export default React.memo(function Projects() {
 </motion.button>
 
 
-          <div className="relative  h-full w-full flex items-center justify-center" aria-live="polite">
+          <div className="relativw  h-full w-full flex items-center justify-center" aria-live="polite">
             {projects.map((project, i) => {
               const isActive = i === activeIndex;
               const { position, scale, zIndex, opacity } = getCardStyles(i);
@@ -348,7 +348,7 @@ export default React.memo(function Projects() {
                   >
                     {/* CARD DESIGN */}
                     <Card
-                      className={ ` h-full w-[340px] sm:h-[500px] rounded-xl overflow-hidden shadow-xl transition-all duration-300 ${
+                      className={ ` h-full  w-[340px] sm:h-[500px] rounded-xl overflow-hidden shadow-xl transition-all duration-300 ${
                         focusedIndex === i ? 'ring-2 ring-blue-500' : ''
                       } ${isActive ? 'border border-blue-400/30' : ''}`}
                       style={{
