@@ -240,7 +240,7 @@ export default React.memo(function Projects() {
     <LazyMotion features={domAnimation}>
       <div 
         ref={sectionRef}
-        className="relative w-full  bg-amber-50 max-w-full mx-auto h-[90vw] sm:h-[500px] mt-5 flex flex-col items-center justify-self-center overflow-x-hidden p-4"
+        className="relative w-full  max-w-full mx-auto h-[600px] sm:h-[500px] mt-5 flex flex-col items-center justify-self-center overflow-x-hidden p-4"
         id="projects-section" 
         aria-label="Projects Section"
       >
