@@ -8,13 +8,13 @@ const Home = () => {
 return<section className=''>
     <div className='container mx-auto h-full'>
       <div className='flex flex-col xl:flex-row items-center justify-between  xl:pt-8 xl:pb-2'>
-        <div className='text-center xl:text-left order-2 xl:order-none'>
+        <div className='mr-2 ml-2 xl:mr-0 xl:ml-0 text-center xl:text-left order-2 xl:order-none '>
           <span className='text-[18px] font-semibold '>DATA SCIENTIST</span>
           <h1 className='h1'>Hello I'm <br/>
           {/* <span className='text-fuchsia-700'> ABHIJITH M</span> */}
           <MatrixText text="ABHIJITH M" className="text-fuchsia-700" />
           </h1>
-          <p className="max-w-[600px] mb-3 mt-2 xl:text-[16px] text-[14px] text-white/80 leading-relaxed text-justify">
+          <p className="max-w-[600px] mb-3 mt-2  xl:text-[16px] text-[14px] text-white/80 leading-relaxed text-justify">
                 I’m a data scientist passionate about turning raw data into meaningful insights and intelligent solutions.
                 I specialize in analyzing complex datasets, building predictive models, and delivering data-driven strategies that drive business performance.
               </p>
