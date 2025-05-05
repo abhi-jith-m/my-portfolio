@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Mail, Phone, MapPin, Linkedin, Code, Instagram, SendHorizontal, ArrowRight, Check } from "lucide-react";
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -19,18 +20,37 @@ export default function Contact() {
   };
 
   const handleSubmit = (e) => {
-    if (e) e.preventDefault();
+    e.preventDefault();
     setIsSubmitting(true);
-
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setFormStatus("success");
-      setTimeout(() => {
-        setFormStatus(null);
-        setFormData({ name: "", email: "", subject: "", message: "" });
-      }, 3000);
-    }, 1500);
+  
+    const serviceId = 'service_ekz43j6';
+    const templateId = 'template_cxduc93';
+    const publicKey = 'o-NBkwb6ZYO3RS-1-';
+  
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      name: formData.name,
+      subject: formData.subject,
+      message: formData.message,
+    };
+  
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then(() => {
+        setIsSubmitting(false);
+        setFormStatus("success");
+        setTimeout(() => {
+          setFormStatus(null);
+          setFormData({ name: "", email: "", subject: "", message: "" });
+        }, 3000);
+      })
+      .catch((error) => {
+        console.error("Email send failed:", error);
+        setIsSubmitting(false);
+        setFormStatus("error");
+      });
   };
+  
 
   return (
     <div className="flex items-center justify-center p-4 sm:p-6 md:p-8 ">
