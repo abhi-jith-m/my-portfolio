@@ -22,8 +22,14 @@ return<section className=''>
           <div className="flex flex-row xl:flex-row gap-4 items-center justify-center xl:justify-start">
 
               <Button variant="success" size="xlg" className="uppercase flex items-center mb-[-2px] gap-2">
+              <a
+                  href="./_abhijith_m_data_scientist.pdf"
+                  download
+                  className="uppercase flex items-center gap-2 w-full h-full px-6 py-3"
+                >
                 <span>Download CV</span>
                 <FiDownload className='text-xl' />
+                </a>
               </Button>
               <div className=' xl:mb-0'>
                 <Social containerStyles="flex gap-4" iconStyles="w-14 h-14 border border-fuchsia-700 
