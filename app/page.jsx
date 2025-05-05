@@ -14,7 +14,7 @@ return<section className=''>
           {/* <span className='text-fuchsia-700'> ABHIJITH M</span> */}
           <MatrixText text="ABHIJITH M" className="text-fuchsia-700" />
           </h1>
-          <p className="max-w-[600px] mb-3 mt-2  xl:text-[16px] text-[14px] text-white/80 leading-relaxed text-justify">
+          <p className="max-w-[600px] mb-3 mt-2 text-center xl:text-[16px] text-[14px] text-white/80 leading-relaxed xl:text-justify">
                 I’m a data scientist passionate about turning raw data into meaningful insights and intelligent solutions.
                 I specialize in analyzing complex datasets, building predictive models, and delivering data-driven strategies that drive business performance.
               </p>
