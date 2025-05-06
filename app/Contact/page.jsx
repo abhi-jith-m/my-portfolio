@@ -52,6 +52,7 @@ export default function Contact() {
   };
   
 
+
   return (
     <div className="flex items-center justify-center p-4 sm:p-6 md:p-8 ">
       <div className="w-full max-w-6xl bg-gray-900/70 backdrop-blur-xl rounded-3xl shadow-2xl border border-purple-600/30 overflow-hidden transition-all duration-300 transform hover:shadow-purple-500/10">
