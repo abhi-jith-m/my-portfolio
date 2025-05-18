@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <section className='w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-10'>
       <div className='xl:ml-20 mx-auto'>
-        <div className='flex flex-col xl:flex-row items-center justify-between py-8 w-full'>
-          <div className='w-full bg-black text-center xl:text-left order-2 xl:order-none mt-8 xl:mt-0'>
+        <div className='flex  flex-col xl:flex-row items-center justify-between py-8 w-full'>
+          <div className='w-full text-center xl:text-left order-2 xl:order-none mt-8 xl:mt-0'>
             <span className='inline-block text-[18px] font-semibold mb-2'>DATA SCIENTIST</span>
             <h1 className='h1 mb-4'>
               Hello I'm <br />
